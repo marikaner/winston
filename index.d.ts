@@ -145,9 +145,9 @@ declare namespace winston {
     loggers: Map<string, Logger>;
     options: LoggerOptions;
 
-    add(id: string, options?: LoggerOptions): Logger;
-    get(id: string, options?: LoggerOptions): Logger;
-    has(id: string): boolean;
+    add(id?: string, options?: LoggerOptions): Logger;
+    get(id?: string, options?: LoggerOptions): Logger;
+    has(id?: string): boolean;
     close(id?: string): void;
 
     new(options?: LoggerOptions): Container;
